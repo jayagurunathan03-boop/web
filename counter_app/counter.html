@@ -1,0 +1,91 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<title>Counter App</title>
+<style>
+body{
+margin: 0;
+display: flex;
+justify-content: center;
+align-items: center;
+height: 100vh;
+font-family: Arial, sans-serif;
+background: linear-gradient(to right, #C471ED, #F64F59);
+}
+.container{
+background-color: white;
+padding: 40px;
+border-radius: 15px;
+box-shadow: 0px 5px 20px rgba(0,0,0,0.3);
+text-align: center;
+width: 350px;
+}
+h2{
+color: #333;
+margin-bottom: 20px;
+}
+#count{
+font-size: 60px;
+font-weight: bold;
+margin: 20px 0;
+color: #222;
+}
+button{
+padding: 12px 22px;
+font-size: 18px;
+margin: 10px;
+border: none;
+border-radius: 8px;
+cursor: pointer;
+color: white;
+transition: 0.3s;
+}
+.increase{
+background-color: green;
+}
+.increase:hover{
+background-color: darkgreen;
+transform: scale(1.05);
+}
+.decrease{
+background-color: red;
+}
+.decrease:hover{
+background-color: darkred;
+transform: scale(1.05);
+}
+.reset{
+background-color: dodgerblue;
+}
+.reset:hover{
+background-color: blue;
+transform: scale(1.05);
+}
+</style>
+</head>
+<body>
+<div class="container">
+<h2>Counter App</h2>
+<h1 id="count">0</h1>
+<button class="increase" onclick="increase()">+1</button>
+<button class="decrease" onclick="decrease()">-1</button>
+<button class="reset" onclick="reset()">Reset</button>
+</div>
+<script>
+let count = 0;
+function increase(){
+count++;
+document.getElementById("count").innerHTML = count;
+}
+function decrease(){
+count--;
+document.getElementById("count").innerHTML = count;
+}
+function reset(){
+count = 0;
+document.getElementById("count").innerHTML = count;
+}
+</script>
+</body>
+</html>

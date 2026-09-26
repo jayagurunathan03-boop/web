@@ -1,0 +1,150 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  background-color: #f4f7f6;
+  color: #333;
+}
+
+.app-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/* Header Styling */
+.app-header {
+  background-color: #1a365d;
+  color: #ffffff;
+  text-align: center;
+  padding: 1.5rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.app-header h1 {
+  font-size: 1.8rem;
+  margin-bottom: 0.25rem;
+}
+
+.app-header h2 {
+  font-size: 1.2rem;
+  font-weight: 400;
+  color: #cbd5e0;
+}
+
+/* Dashboard Main Layout */
+.dashboard-content {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: center;
+  padding: 2rem;
+  max-width: 1000px;
+  margin: 0 auto;
+  flex: 1;
+}
+
+/* Student Card Styling */
+.student-card {
+  background: #ffffff;
+  border-radius: 10px;
+  padding: 1.5rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 320px;
+}
+
+.student-photo {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid #3182ce;
+  margin-bottom: 1rem;
+}
+
+.student-profile h3 {
+  text-align: center;
+  margin-bottom: 1rem;
+  font-size: 1.4rem;
+}
+
+.student-info {
+  width: 100%;
+}
+
+.student-info p {
+  margin: 0.5rem 0;
+  font-size: 0.95rem;
+  border-bottom: 1px dashed #e2e8f0;
+  padding-bottom: 0.3rem;
+}
+
+/* Status Badges */
+.status-section {
+  margin-top: 1rem;
+  background-color: #f8fafc;
+  padding: 0.75rem;
+  border-radius: 6px;
+}
+
+.status-pass {
+  color: #2f855a;
+  font-weight: bold;
+}
+
+.status-fail {
+  color: #c53030;
+  font-weight: bold;
+}
+
+/* Subject List Styling */
+.subject-list-container {
+  background: #ffffff;
+  border-radius: 10px;
+  padding: 1.5rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+  width: 280px;
+  align-self: flex-start;
+}
+
+.subject-list-container h3 {
+  margin-bottom: 1rem;
+  color: #2b6cb0;
+  border-bottom: 2px solid #2b6cb0;
+  padding-bottom: 0.5rem;
+}
+
+.subject-list-container ul {
+  list-style-type: none;
+}
+
+.subject-list-container li {
+  background-color: #edf2f7;
+  margin-bottom: 0.5rem;
+  padding: 0.6rem 1rem;
+  border-radius: 5px;
+  font-weight: 500;
+  transition: transform 0.2s;
+}
+
+.subject-list-container li:hover {
+  transform: translateX(4px);
+  background-color: #e2e8f0;
+}
+
+/* Footer Styling */
+.app-footer {
+  background-color: #2d3748;
+  color: #a0aec0;
+  text-align: center;
+  padding: 1rem;
+  margin-top: auto;
+  font-size: 0.85rem;
+}

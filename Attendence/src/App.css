@@ -1,0 +1,205 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #f1f5f9;
+}
+
+.app {
+  min-height: 100vh;
+}
+
+/* Header */
+
+.header {
+  background: #2563eb;
+  color: white;
+  padding: 25px;
+  text-align: center;
+}
+
+.header h1 {
+  margin: 0;
+  font-size: 30px;
+}
+
+.header p {
+  margin: 8px 0 0;
+}
+
+/* Main Layout */
+
+.main-container {
+  display: flex;
+  gap: 25px;
+  padding: 30px;
+  max-width: 1200px;
+  margin: auto;
+}
+
+/* Student Section */
+
+.student-section {
+  flex: 1;
+}
+
+.student-section h2 {
+  margin-top: 0;
+}
+
+.student-list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+/* Student Card */
+
+.student-card {
+  background: white;
+  padding: 15px 20px;
+  border-radius: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.08);
+}
+
+.student-info {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.student-number {
+  width: 35px;
+  height: 35px;
+  background: #e2e8f0;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+}
+
+.student-name {
+  font-size: 17px;
+  font-weight: 600;
+}
+
+/* Attendance Button */
+
+.attendance-btn {
+  border: none;
+  padding: 9px 18px;
+  border-radius: 7px;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.present {
+  background: #16a34a;
+}
+
+.absent {
+  background: #dc2626;
+}
+
+.attendance-btn:hover {
+  opacity: 0.85;
+}
+
+/* Sidebar */
+
+.sidebar {
+  width: 300px;
+  background: white;
+  padding: 25px;
+  border-radius: 15px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  height: fit-content;
+  position: sticky;
+  top: 20px;
+}
+
+.sidebar h2 {
+  text-align: center;
+  margin-top: 0;
+}
+
+/* Percentage */
+
+.percentage {
+  text-align: center;
+  font-size: 48px;
+  font-weight: bold;
+  margin-top: 20px;
+}
+
+.percentage-label {
+  text-align: center;
+  color: #64748b;
+}
+
+/* Statistics */
+
+.stat-box {
+  display: flex;
+  justify-content: space-between;
+  padding: 14px;
+  margin-top: 10px;
+  background: #f8fafc;
+  border-radius: 8px;
+}
+
+.stat-box strong {
+  font-size: 18px;
+}
+
+/* Progress */
+
+.progress-container {
+  width: 100%;
+  height: 15px;
+  background: #e2e8f0;
+  border-radius: 10px;
+  margin-top: 20px;
+  overflow: hidden;
+}
+
+.progress-bar {
+  height: 100%;
+  background: #2563eb;
+  border-radius: 10px;
+  transition: width 0.3s ease;
+}
+
+/* Status */
+
+.status {
+  text-align: center;
+  font-weight: bold;
+  margin-top: 20px;
+}
+
+/* Mobile */
+
+@media (max-width: 768px) {
+  .main-container {
+    flex-direction: column;
+    padding: 15px;
+  }
+
+  .sidebar {
+    width: 100%;
+    position: static;
+  }
+
+  .header h1 {
+    font-size: 24px;
+  }
+}

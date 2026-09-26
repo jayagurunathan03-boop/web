@@ -1,0 +1,97 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background: #f1f5f9;
+}
+
+.app {
+  min-height: 100vh;
+  background: #f1f5f9;
+}
+
+/* Navbar */
+
+.navbar {
+  height: 50px;
+  background: #2563eb;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 7%;
+  color: white;
+}
+
+.logo {
+  color: white;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.nav-links {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+}
+
+.nav-link {
+  color: white;
+  text-decoration: none;
+  font-size: 12px;
+}
+
+.nav-link:hover {
+  text-decoration: underline;
+}
+
+.add-link {
+  background: white;
+  color: #2563eb;
+  padding: 6px 10px;
+  border-radius: 3px;
+  font-weight: bold;
+}
+
+/* About */
+
+.about-page {
+  width: 600px;
+  margin: 40px auto;
+  background: white;
+  padding: 30px;
+  border-radius: 7px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+.about-page h1 {
+  font-size: 22px;
+  margin-bottom: 15px;
+  color: #1e293b;
+}
+
+.about-page p {
+  color: #64748b;
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
+/* Responsive */
+
+@media (max-width: 700px) {
+  .navbar {
+    padding: 0 20px;
+  }
+
+  .nav-links {
+    gap: 12px;
+  }
+
+  .about-page {
+    width: 90%;
+  }
+}
